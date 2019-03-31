@@ -1,0 +1,27 @@
+.address-link {
+    font-weight: 300;
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
+
+// Footer
+.footer-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: column;
+    justify-content: center;
+    align-items: center;
+        li {
+            margin: setSize(9) 0;
+            text-align: center;
+            a {
+                padding: setSize(10) setSize(10);
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+        }
+}

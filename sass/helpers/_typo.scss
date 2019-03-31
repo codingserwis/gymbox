@@ -1,0 +1,13 @@
+// Font size
+.fs {
+    &-12 {
+        font-size: setSize(12);
+    }
+}
+
+// Font weight
+.fw {
+    &-300 {
+        font-weight: 300;
+    }
+}

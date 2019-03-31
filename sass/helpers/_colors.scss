@@ -1,0 +1,17 @@
+// Bcg colors
+.bg {
+    &-red {
+        background-color: $gymbox_red;
+    }
+
+    &-black {
+        background-color: $gymbox_black;
+    }
+}
+
+// Font colors
+.fc {
+    &-white {
+        color: $white;
+    }
+}
