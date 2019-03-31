@@ -1,12 +1,53 @@
 section {
-    &.price-list {
+    &.price-list,
+    &.advertising {
         background-color: $light-section-background;
+    }
+
+    &.section-start {
+        position: relative;
+        min-height: 100vh;
+        background: url('../img/start-sm-bg.jpg') 0 0 no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        @include media('>=lg') {
+            background: url('../img/start-big-bg.jpg') 0 0 no-repeat;
+            background-size: cover;
+        }
     }
 }
 
 .section-title {
     text-transform: uppercase;
     font-family: 'Roboto Slab';
+}
+
+.advertising-img {
+    width: setSize(200);
+    height: setSize(200);
+    margin-top: setSize(15);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    
+    &.strength {
+        background: url('../img/strength.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    &.efficency {
+        background: url('../img/efficiency.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    &.condition {
+        background: url('../img/conditioning.jpg') 0 0 no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 #price-list {

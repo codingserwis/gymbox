@@ -111,31 +111,7 @@ get_header( ); ?>
 			</div>
 		</div>
 	</section> -->
-	<!-- <section class="section_news">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-xs-12 center-block text-center">
-					<div class="col-md-4 col-sm-4">
-						<h2 class="news_slogan slideout margin_top">Zwiększ swoją<p class="news_inner">siłę</p>
-						</h2>
-						<div class="news_thumbnail strength"></div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<h2 class="news_slogan slideout margin_top">
-						Popraw swoją<p class="news_inner">sprawność</p>
-						</h2>
-						<div class="news_thumbnail efficency"></div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<h2 class="news_slogan slideout margin_top">
-						Pracuj nad<p class="news_inner">kondycją</p>
-						</h2>
-						<div class="news_thumbnail condition"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
+	<!--  -->
 	<!-- <section id="graphic" class="section_schedule">
 		<div class="container">
 			<div class="row">
@@ -951,6 +927,33 @@ get_header( ); ?>
 			</div>
 		</div>
     </section> -->
+    <section id="start" class="section-start">
+
+    </section> <!-- /start -->
+    <section class="advertising py-5">
+		<div class="container">
+			<div class="row">
+                <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
+                    <h3 class="section-title fs-32 text-center">
+                        Zwiększ swoją <span class="fs-42 fc-red">siłę</span>
+                    </h3>
+                    <div class="advertising-img strength"></div>
+                </div>
+                <div class="col-12 col-lg-4 my-5 my-lg-0 d-flex flex-column align-items-center">
+                    <h3 class="section-title fs-32 text-center">
+                        Popraw sowją <span class="fs-42 fc-red">sprawność</span>
+                    </h3>
+                    <div class="advertising-img efficency"></div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
+                    <h3 class="section-title fs-32 text-center">
+                        Pracuj nad <span class="fs-42 fc-red">kondycją</span>
+                    </h3>
+                    <div class="advertising-img condition"></div>
+                </div>
+			</div>
+		</div>
+    </section>
     <section class="price-list py-5">
         <div class="container">
             <div class="row">
