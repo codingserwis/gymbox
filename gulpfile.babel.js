@@ -97,6 +97,7 @@ export const sassToCss = () => {
 // gulp watch task
 export const watchForChanges = () => {
     watch([phpPaths.dev, phpPaths.skipedFolder, phpPaths.skipSubFolders], series(phpCopy, serVerReload));
+    watch(sassPaths.dev, sassToCss);
 }
 
 // gulp develop task
