@@ -19,10 +19,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12 col-md-6 fc-white text-center text-md-right fs-12 fw-300">
+			<div class="col-12 col-lg-6 fc-white text-center text-lg-right fs-12 fw-300">
 				Copyrights &copy; Gymbox <?php echo date('Y'); ?>
 			</div>
-			<div class="col-12 col-md-6 text-center text-md-left fc-white fs-12 fw-300 mt-3 mt-md-0">
+			<div class="col-12 col-lg-6 text-center text-lg-left fc-white fs-12 fw-300 mt-3 mt-lg-0">
 				Projekt i wykonanie: <a href="http://codingserwis.pl" class="fc-white fs-12 fw-300">CodingSerwis</a>
 			</div>
 		</div>
