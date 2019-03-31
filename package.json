@@ -1,0 +1,36 @@
+{
+  "name": "gymbox",
+  "version": "1.0.0",
+  "description": "Gymbox home page",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "prod": "gulp buildForProd --prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingserwis/gymbox.git"
+  },
+  "author": "Maciej Lehrer <kontakt@codingserwis.pl> (http://codingserwis.pl/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codingserwis/gymbox/issues"
+  },
+  "homepage": "https://github.com/codingserwis/gymbox#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/register": "^7.4.0",
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.3",
+    "del": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery": "^3.3.1",
+    "yargs": "^13.2.2"
+  }
+}
