@@ -12,10 +12,10 @@
  @import "./node_modules/bootstrap/scss/root";
  @import "./node_modules/bootstrap/scss/reboot";
 //  @import "./node_modules/bootstrap/scss/type";
-//  @import "./node_modules/bootstrap/scss/images";
+ @import "./node_modules/bootstrap/scss/images";
 //  @import "./node_modules/bootstrap/scss/code";
  @import "./node_modules/bootstrap/scss/grid";
-//  @import "./node_modules/bootstrap/scss/tables";
+ @import "./node_modules/bootstrap/scss/tables";
 //  @import "./node_modules/bootstrap/scss/forms";
 //  @import "./node_modules/bootstrap/scss/buttons";
 //  @import "./node_modules/bootstrap/scss/transitions";
@@ -47,6 +47,27 @@
 // Custom function for element size
 @function setSize($size: 16) {
     @return ($size / 16) * 1rem;
+}
+
+// cusom mixin
+@mixin media($res) {
+    @if ($res == '>=sm') {
+        @media screen and (min-width: map-get($grid-breakpoints, sm) ) {
+            @content;
+        }
+    } @else if ($res == '>=md') {
+        @media screen and (min-width: map-get($grid-breakpoints, md) ) {
+            @content;
+        }
+    } @else if ($res == '>=lg') {
+        @media screen and (min-width: map-get($grid-breakpoints, lg) ) {
+            @content;
+        }
+    } @else if ($res == '>=xl') {
+        @media screen and (min-width: map-get($grid-breakpoints, xl) ) {
+            @content;
+        }
+    }
 }
 
 // custom styles

@@ -13,15 +13,15 @@ get_header( ); ?>
     <section class="contact-section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-8 py-2 text-right bg-red">
-                    <a href="mailto:<?php the_field( 'gymbox_email_address' ); ?>" class="d-none d-md-inline-block address-link email">
+                <div class="col-12 col-lg-8 py-2 text-right bg-red">
+                    <a href="mailto:<?php the_field( 'gymbox_email_address' ); ?>" class="d-none d-lg-inline-block address-link email">
                         <?php the_field( 'gymbox_email_address' ); ?>
                     </a>
                     <a href="tel:<?php echo $g_formated_phone; ?>" class="address-link phone">
                         <?php echo $g_phone; ?>
                     </a>
                 </div>
-                <div class="d-none d-md-block col-md-4 py-2 bg-black">
+                <div class="d-none d-lg-block col-lg-4 py-2 bg-black">
                 </div>
             </div>
         </div>
@@ -951,4 +951,65 @@ get_header( ); ?>
 			</div>
 		</div>
     </section> -->
+    <section class="price-list py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title fs-36 text-center">
+                        cennik
+                    </h2>
+                </div>
+            </div>
+            <div class="row justify-content-lg-center">
+                <div class="col-12 col-lg-6">
+                    <?php get_template_part( 'template-parts/table', 'pricelist' ); ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <h3 class="section-title fs-22 text-center">
+                        Akceptujemy karty sportowe
+                    </h3>
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="<?php echo esc_url( URI . '/assets/img/karta_multi.jpeg' ); ?>" alt="Karty sportowe Multi Sport" title="Karty sportowe Multi Sport" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="<?php echo esc_url( URI . '/assets/img/ok_system.png' ); ?>" alt="Karty sportowe OK System" title="Karty sportowe OK System" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="<?php echo esc_url( URI . '/assets/img/karta_multi_a.jpeg' ); ?>" alt="Karty sportowe Multi Sport Active" title="Karty sportowe Multi Sport Active" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <h3 class="section-title fs-22 text-center">
+                        Akceptujemy karty płatnicze
+                    </h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-4 my-2">
+                    <img src="<?php echo esc_url( URI . '/assets/img/cards.jpg' ); ?>" alt="Karty płatnicze" title="Karty płatnicze" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <h3 class="section-title fs-22 text-center">
+                        Wspierają nas
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-2 text-center">
+                    <img src="<?php echo esc_url( URI . '/assets/img/sfd-blue.png' ); ?>" alt="SFD Logo" title="SFD Logo" class="img-fluid">
+                </div>
+            </div>
+        </div> <!-- container -->
+    </section> <!-- /pricelist -->
+    <section class="contact">
+
+    </section> <!-- /constact -->
 <?php get_footer( ); ?>
