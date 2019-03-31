@@ -6,6 +6,7 @@ import gulpIf from 'gulp-if';
 import sass from 'gulp-sass';
 import sourceMaps from 'gulp-sourcemaps';
 import autoprefixer from 'gulp-autoprefixer';
+import imgMin from 'gulp-imagemin';
 
 // Environment
 const PRODUCTION = yargs.argv.prod;
@@ -47,6 +48,12 @@ const jsPaths = {
 const sassPaths = {
     dev: `${dirs.dev}/sass/**/*.scss`,
     prod: `${dirs.prod}/assets/css`
+}
+
+// img paths
+const imgPaths = {
+    dev: `${dirs.dev}/img/**/*.*`,
+    prod: `${dirs.prod}/assets/img`
 }
 
 // copy all dependences to production folder
@@ -94,6 +101,13 @@ export const sassToCss = () => {
         .pipe(server.stream());
 }
 
+// gulp img copy
+export const imgCopy = () => {
+    return src(imgPaths.dev)
+        .pipe(gulpIf(PRODUCTION, imgMin()))
+        .pipe(dest(imgPaths.prod));
+}
+
 // gulp watch task
 export const watchForChanges = () => {
     watch([phpPaths.dev, phpPaths.skipedFolder, phpPaths.skipSubFolders], series(phpCopy, serVerReload));
@@ -101,10 +115,10 @@ export const watchForChanges = () => {
 }
 
 // gulp develop task
-export const develop = series(clear, copyDependences, phpCopy, sassToCss, serve, watchForChanges);
+export const develop = series(clear, copyDependences, phpCopy, sassToCss, imgCopy, serve, watchForChanges);
 
 // gulp build for production
-export const buildForProd = series(clear, copyDependences, sassToCss, phpCopy);
+export const buildForProd = series(clear, copyDependences, sassToCss, phpCopy, imgCopy);
 
 // gulp default
 export default develop;
