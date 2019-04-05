@@ -1034,7 +1034,38 @@ get_header( ); ?>
             </div>
         </div> <!-- container -->
     </section> <!-- /pricelist -->
-    <section class="contact">
-
+    <section class="contact py-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-6 col-lg-3 mb-4">
+					<img src="<?php echo URI . '/assets/img/gymbox_logo.png'; ?>" alt="Gymbox logo" title="Gymbox logo" class="img-fluid">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 fc-white text-center fs-32 fw-700">
+					ul. <?php the_field( 'gymbox_address_str' ); ?>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 fc-white text-center fs-32 fw-700">
+					<span><?php the_field( 'gymbox_address_zip_code' ); ?></span> <span><?php the_field( 'gymbox_address_city' ); ?></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center">
+					<a href="<?php echo $g_formated_phone; ?>" class="address-link contact phone fs-32"><?php the_field( 'gymbox_phone_no' ); ?></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center">
+					<a href="mailto:<?php the_field( 'gymbox_email_address' ); ?>" class="address-link contact email fs-32"><?php the_field( 'gymbox_email_address' ); ?></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div id="gmap-container"></div>
+				</div>
+			</div>
+		</div> <!-- /container -->
     </section> <!-- /constact -->
 <?php get_footer( ); ?>

@@ -24,6 +24,10 @@ section {
             background: url('../img/graphic-big-bg.jpg') 0 0 no-repeat;
         }
     }
+
+    &.contact {
+        background-color: lighten($gymbox_black, 10);
+    }
 }
 
 .section-title {
@@ -97,6 +101,11 @@ section {
 .address-link {
     font-weight: 300;
     color: $white;
+
+    &.contact {
+        font-weight: 700;
+    }
+
     &:hover {
         color: $white;
     }
