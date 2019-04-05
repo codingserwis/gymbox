@@ -935,30 +935,52 @@ get_header( ); ?>
 			<div class="row">
                 <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
                     <h3 class="section-title fs-32 text-center">
-                        Zwiększ swoją <span class="fs-42 fc-red">siłę</span>
+                        Zwiększ swoją<br/> <span class="fs-42 fc-red text-uppercase">siłę</span>
                     </h3>
                     <div class="advertising-img strength"></div>
                 </div>
                 <div class="col-12 col-lg-4 my-5 my-lg-0 d-flex flex-column align-items-center">
                     <h3 class="section-title fs-32 text-center">
-                        Popraw sowją <span class="fs-42 fc-red">sprawność</span>
+                        Popraw sowją <span class="fs-42 fc-red text-uppercase">sprawność</span>
                     </h3>
                     <div class="advertising-img efficency"></div>
                 </div>
                 <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
                     <h3 class="section-title fs-32 text-center">
-                        Pracuj nad <span class="fs-42 fc-red">kondycją</span>
+                        Pracuj nad <span class="fs-42 fc-red text-uppercase">kondycją</span>
                     </h3>
                     <div class="advertising-img condition"></div>
                 </div>
 			</div>
 		</div>
-    </section>
+    </section> <!-- /advertising -->
+    <section id="graphic" class="section_schedule py-5 fc-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title fs-36 text-center text-uppercase">
+                        grafik
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="section-title fs-22">Klub jest czynny 7 dni w tygodniu od: <?php the_field( 'gymbox_open_hour' ); ?> do: <?php the_field( 'gymbox_close_hour' ); ?>.</h3>
+                    <h3 class="section-title fs-22">Zapraszamy wszystkich chętnych na zajęcia!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <?php get_template_part( 'template-parts/table', 'scheduler' ); ?>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /scheduler -->
     <section class="price-list py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="section-title fs-36 text-center">
+                    <h2 class="section-title fs-36 text-center text-uppercase">
                         cennik
                     </h2>
                 </div>

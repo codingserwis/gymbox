@@ -20,3 +20,15 @@
  }
 
  add_action( 'wp_enqueue_scripts', 'gymbox_scripts_and_styles' );
+
+ // ACF Table line breaks
+//  add_action('admin_head', 'acf_table_styles');
+
+function acf_table_styles() {
+  echo '<style>
+    .acf-table-header-cont,
+    .acf-table-body-cont {
+        white-space: pre-line;
+    }
+  </style>';
+}

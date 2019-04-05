@@ -1,9 +1,9 @@
-<table id="price-list" class="table table-hover table-striped">
+<?php $gymbox_schedule = get_field( 'gymbox_scheduler' ); ?>
+<table id="scheduler" class="table table-bordered scheduler-table my-5">
     <thead>
         <tr>
             <?php 
-                $price_list = get_field( 'gymbox_pricelist_table' );
-                foreach ( $price_list['header'] as $th ) {
+                foreach ($gymbox_schedule['header'] as $th) {
                     echo '<th>';
                         echo $th['c'];
                     echo '</th>';
@@ -13,11 +13,12 @@
     </thead>
     <tbody>
         <?php 
-            foreach ( $price_list['body'] as $tr ) {
+            foreach ( $gymbox_schedule['body'] as $tr ) {
                 echo '<tr>';
                     foreach ( $tr as $td ) {
-                        echo '<td valign="middle">';
-                            echo $td['c'];
+                        $test = strip_tags( $td['c'] );
+                        echo '<td data-zajecia="' . $test . '">';
+                            echo nl2br( $td['c'] );
                         echo '</td>';
                     }
                 echo '</tr>';
