@@ -86,236 +86,235 @@
                 'workout' => $g_scheduler_monday['monday_twenty_hour']['workout'],
                 'coach' => $g_scheduler_monday['monday_twenty_hour']['coach']
             )
+        ),
+        'tuesday' => array(
+            '8_00' => array(
+                'workout' => $g_scheduler_tuesday['tuesday_eight_hour']['workout'],
+                'coach' => $g_scheduler_tuesday['tuesday_eight_hour']['coach']
+            ),
+            '9_00' => array(
+                'workout' => $g_scheduler_tuesday['tuesday_nine_hour']['workout'],
+                'coach' => $g_scheduler_tuesday['tuesday_nine_hour']['coach']
+            ),
+            '10_00' => array(
+                'workout' => $g_scheduler_tuesday['tuesday_ten_hour']['workout'],
+                'coach' => $g_scheduler_tuesday['tuesday_ten_hour']['coach']
+            ),
+            '15_00' => array(
+                'workout' => $g_scheduler_tuesday['tuesday_fifteenth_hour']['workout'],
+                'coach' => $g_scheduler_tuesday['tuesday_fifteenth_hour']['coach']
+            ),
+            '16_00' => array(
+                'workout' => $g_scheduler_tuesday['tuesday_sixteenth_hour']['workout'],
+                'coach' => $g_scheduler_tuesday['tuesday_sixteenth_hour']['coach']
+            ),
+            '17_00' => array(
+                'workout' => $g_scheduler_tuesday['tuesday_seventeenth_hour']['workout'],
+                'coach' => $g_scheduler_tuesday['tuesday_seventeenth_hour']['coach']
+            ),
+            '18_00' => array(
+                'workout' => $g_scheduler_tuesday['tuesday_eighteenth_hour']['workout'],
+                'coach' => $g_scheduler_tuesday['tuesday_eighteenth_hour']['coach']
+            ),
+            '19_00' => array(
+                'workout' => $g_scheduler_tuesday['tuesday_nineteenth_hour']['workout'],
+                'coach' => $g_scheduler_tuesday['tuesday_nineteenth_hour']['coach']
+            ),
+            '20_00' => array(
+                'workout' => $g_scheduler_tuesday['tuesday_twenty_hour']['workout'],
+                'coach' => $g_scheduler_tuesday['tuesday_twenty_hour']['coach']
+            )
+        ),
+        'wednesday' => array(
+            '8_00' => array(
+                'workout' => $g_scheduler_wednesday['wednesday_eight_hour']['workout'],
+                'coach' => $g_scheduler_wednesday['wednesday_eight_hour']['coach']
+            ),
+            '9_00' => array(
+                'workout' => $g_scheduler_wednesday['wednesday_nine_hour']['workout'],
+                'coach' => $g_scheduler_wednesday['wednesday_nine_hour']['coach']
+            ),
+            '10_00' => array(
+                'workout' => $g_scheduler_wednesday['wednesday_ten_hour']['workout'],
+                'coach' => $g_scheduler_wednesday['wednesday_ten_hour']['coach']
+            ),
+            '15_00' => array(
+                'workout' => $g_scheduler_wednesday['wednesday_fifteenth_hour']['workout'],
+                'coach' => $g_scheduler_wednesday['wednesday_fifteenth_hour']['coach']
+            ),
+            '16_00' => array(
+                'workout' => $g_scheduler_wednesday['wednesday_sixteenth_hour']['workout'],
+                'coach' => $g_scheduler_wednesday['wednesday_sixteenth_hour']['coach']
+            ),
+            '17_00' => array(
+                'workout' => $g_scheduler_wednesday['wednesday_seventeenth_hour']['workout'],
+                'coach' => $g_scheduler_wednesday['wednesday_seventeenth_hour']['coach']
+            ),
+            '18_00' => array(
+                'workout' => $g_scheduler_wednesday['wednesday_eighteenth_hour']['workout'],
+                'coach' => $g_scheduler_wednesday['wednesday_eighteenth_hour']['coach']
+            ),
+            '19_00' => array(
+                'workout' => $g_scheduler_wednesday['wednesday_nineteenth_hour']['workout'],
+                'coach' => $g_scheduler_wednesday['wednesday_nineteenth_hour']['coach']
+            ),
+            '20_00' => array(
+                'workout' => $g_scheduler_wednesday['wednesday_twenty_hour']['workout'],
+                'coach' => $g_scheduler_wednesday['wednesday_twenty_hour']['coach']
+            )
+        ),
+        'thursday' => array(
+            '8_00' => array(
+                'workout' => $g_scheduler_thursday['thursday_eight_hour']['workout'],
+                'coach' => $g_scheduler_thursday['thursday_eight_hour']['coach']
+            ),
+            '9_00' => array(
+                'workout' => $g_scheduler_thursday['thursday_nine_hour']['workout'],
+                'coach' => $g_scheduler_thursday['thursday_nine_hour']['coach']
+            ),
+            '10_00' => array(
+                'workout' => $g_scheduler_thursday['thursday_ten_hour']['workout'],
+                'coach' => $g_scheduler_thursday['thursday_ten_hour']['coach']
+            ),
+            '15_00' => array(
+                'workout' => $g_scheduler_thursday['thursday_fifteenth_hour']['workout'],
+                'coach' => $g_scheduler_thursday['thursday_fifteenth_hour']['coach']
+            ),
+            '16_00' => array(
+                'workout' => $g_scheduler_thursday['thursday_sixteenth_hour']['workout'],
+                'coach' => $g_scheduler_thursday['thursday_sixteenth_hour']['coach']
+            ),
+            '17_00' => array(
+                'workout' => $g_scheduler_thursday['thursday_seventeenth_hour']['workout'],
+                'coach' => $g_scheduler_thursday['thursday_seventeenth_hour']['coach']
+            ),
+            '18_00' => array(
+                'workout' => $g_scheduler_thursday['thursday_eighteenth_hour']['workout'],
+                'coach' => $g_scheduler_thursday['thursday_eighteenth_hour']['coach']
+            ),
+            '19_00' => array(
+                'workout' => $g_scheduler_thursday['thursday_nineteenth_hour']['workout'],
+                'coach' => $g_scheduler_thursday['thursday_nineteenth_hour']['coach']
+            ),
+            '20_00' => array(
+                'workout' => $g_scheduler_thursday['thursday_twenty_hour']['workout'],
+                'coach' => $g_scheduler_thursday['thursday_twenty_hour']['coach']
+            )
+        ),
+        'friday' => array(
+            '8_00' => array(
+                'workout' => $g_scheduler_friday['friday_eight_hour']['workout'],
+                'coach' => $g_scheduler_friday['friday_eight_hour']['coach']
+            ),
+            '9_00' => array(
+                'workout' => $g_scheduler_friday['friday_nine_hour']['workout'],
+                'coach' => $g_scheduler_friday['friday_nine_hour']['coach']
+            ),
+            '10_00' => array(
+                'workout' => $g_scheduler_friday['friday_ten_hour']['workout'],
+                'coach' => $g_scheduler_friday['friday_ten_hour']['coach']
+            ),
+            '15_00' => array(
+                'workout' => $g_scheduler_friday['friday_fifteenth_hour']['workout'],
+                'coach' => $g_scheduler_friday['friday_fifteenth_hour']['coach']
+            ),
+            '16_00' => array(
+                'workout' => $g_scheduler_friday['friday_sixteenth_hour']['workout'],
+                'coach' => $g_scheduler_friday['friday_sixteenth_hour']['coach']
+            ),
+            '17_00' => array(
+                'workout' => $g_scheduler_friday['friday_seventeenth_hour']['workout'],
+                'coach' => $g_scheduler_friday['friday_seventeenth_hour']['coach']
+            ),
+            '18_00' => array(
+                'workout' => $g_scheduler_friday['friday_eighteenth_hour']['workout'],
+                'coach' => $g_scheduler_friday['friday_eighteenth_hour']['coach']
+            ),
+            '19_00' => array(
+                'workout' => $g_scheduler_friday['friday_nineteenth_hour']['workout'],
+                'coach' => $g_scheduler_friday['friday_nineteenth_hour']['coach']
+            ),
+            '20_00' => array(
+                'workout' => $g_scheduler_friday['friday_twenty_hour']['workout'],
+                'coach' => $g_scheduler_friday['friday_twenty_hour']['coach']
+            )
+        ),
+        'saturday' => array(
+            '8_00' => array(
+                'workout' => $g_scheduler_saturday['saturday_eight_hour']['workout'],
+                'coach' => $g_scheduler_saturday['saturday_eight_hour']['coach']
+            ),
+            '9_00' => array(
+                'workout' => $g_scheduler_saturday['saturday_nine_hour']['workout'],
+                'coach' => $g_scheduler_saturday['saturday_nine_hour']['coach']
+            ),
+            '10_00' => array(
+                'workout' => $g_scheduler_saturday['saturday_ten_hour']['workout'],
+                'coach' => $g_scheduler_saturday['saturday_ten_hour']['coach']
+            ),
+            '15_00' => array(
+                'workout' => $g_scheduler_saturday['saturday_fifteenth_hour']['workout'],
+                'coach' => $g_scheduler_saturday['saturday_fifteenth_hour']['coach']
+            ),
+            '16_00' => array(
+                'workout' => $g_scheduler_saturday['saturday_sixteenth_hour']['workout'],
+                'coach' => $g_scheduler_saturday['saturday_sixteenth_hour']['coach']
+            ),
+            '17_00' => array(
+                'workout' => $g_scheduler_saturday['saturday_seventeenth_hour']['workout'],
+                'coach' => $g_scheduler_saturday['saturday_seventeenth_hour']['coach']
+            ),
+            '18_00' => array(
+                'workout' => $g_scheduler_saturday['saturday_eighteenth_hour']['workout'],
+                'coach' => $g_scheduler_saturday['saturday_eighteenth_hour']['coach']
+            ),
+            '19_00' => array(
+                'workout' => $g_scheduler_saturday['saturday_nineteenth_hour']['workout'],
+                'coach' => $g_scheduler_saturday['saturday_nineteenth_hour']['coach']
+            ),
+            '20_00' => array(
+                'workout' => $g_scheduler_saturday['saturday_twenty_hour']['workout'],
+                'coach' => $g_scheduler_saturday['saturday_twenty_hour']['coach']
+            )
+        ),
+        'sunday' => array(
+            '8_00' => array(
+                'workout' => $g_scheduler_sunday['sunday_eight_hour']['workout'],
+                'coach' => $g_scheduler_sunday['sunday_eight_hour']['coach']
+            ),
+            '9_00' => array(
+                'workout' => $g_scheduler_sunday['sunday_nine_hour']['workout'],
+                'coach' => $g_scheduler_sunday['sunday_nine_hour']['coach']
+            ),
+            '10_00' => array(
+                'workout' => $g_scheduler_sunday['sunday_ten_hour']['workout'],
+                'coach' => $g_scheduler_sunday['sunday_ten_hour']['coach']
+            ),
+            '15_00' => array(
+                'workout' => $g_scheduler_sunday['sunday_fifteenth_hour']['workout'],
+                'coach' => $g_scheduler_sunday['sunday_fifteenth_hour']['coach']
+            ),
+            '16_00' => array(
+                'workout' => $g_scheduler_sunday['sunday_sixteenth_hour']['workout'],
+                'coach' => $g_scheduler_sunday['sunday_sixteenth_hour']['coach']
+            ),
+            '17_00' => array(
+                'workout' => $g_scheduler_sunday['sunday_seventeenth_hour']['workout'],
+                'coach' => $g_scheduler_sunday['sunday_seventeenth_hour']['coach']
+            ),
+            '18_00' => array(
+                'workout' => $g_scheduler_sunday['sunday_eighteenth_hour']['workout'],
+                'coach' => $g_scheduler_sunday['sunday_eighteenth_hour']['coach']
+            ),
+            '19_00' => array(
+                'workout' => $g_scheduler_sunday['sunday_nineteenth_hour']['workout'],
+                'coach' => $g_scheduler_sunday['sunday_nineteenth_hour']['coach']
+            ),
+            '20_00' => array(
+                'workout' => $g_scheduler_sunday['sunday_twenty_hour']['workout'],
+                'coach' => $g_scheduler_sunday['sunday_twenty_hour']['coach']
+            )
         )
-        // ,
-        // 'tuesday' => array(
-        //     '8_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '9_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '10_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '15_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '16_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '17_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '18_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '19_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '20_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     )
-        // ),
-        // 'wednesday' => array(
-        //     '8_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '9_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '10_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '15_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '16_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '17_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '18_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '19_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '20_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     )
-        // ),
-        // 'thursday' => array(
-        //     '8_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '9_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '10_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '15_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '16_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '17_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '18_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '19_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '20_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     )
-        // ),
-        // 'friday' => array(
-        //     '8_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '9_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '10_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '15_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '16_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '17_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '18_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '19_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '20_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     )
-        // ),
-        // 'saturday' => array(
-        //     '8_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '9_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '10_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '15_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '16_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '17_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '18_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '19_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '20_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     )
-        // ),
-        // 'sunday' => array(
-        //     '8_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '9_00' => array(
-        //         'workout' => ,
-        //         'coach' => 
-        //     ),
-        //     '10_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '15_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '16_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '17_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '18_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '19_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     ),
-        //     '20_00' => array(
-        //         'workout' => ,
-        //         'coach' =>
-        //     )
-        // )
     );
 
      wp_localize_script( 'gymbox-scheduler', 'g_scheduler', $scheduler );
