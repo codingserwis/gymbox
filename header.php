@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head( ); ?>
 	</head>
-	<body id="top" <?php body_class( ); ?> data-spy="scroll" data-target="#gymbox-navbar-collapse">
+	<body id="top" <?php body_class( 'position-relative' ); ?> data-spy="scroll" data-target="#gymboxNavbar">
 	<!-- <div style="display: none;">
 			<svg xmls="http://www.w3.org/2000/svg">
 				<symbol id="fb_logo" viewBox="0 0 53 53">

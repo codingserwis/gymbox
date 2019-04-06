@@ -4,8 +4,16 @@
         font-size: setSize(12);
     }
 
+    
     &-22 {
         font-size: setSize(22);
+    }
+    
+    &-24-32 {
+        font-size: setSize(24);
+        @include media('>=lg') {
+            font-size: setSize(32);
+        }
     }
 
     &-32 {

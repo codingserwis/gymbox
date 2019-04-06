@@ -1,3 +1,61 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .navbar-light {
+        .navbar-nav {
+            .nav-link {
+                color: $white;
+                font-size: setSize(20);
+                font-weight: 400;
+                text-transform: uppercase;
+                &.scroller {
+                    color: $gymbox_black;
+                }
+                &.active {
+                    color: $gymbox_red;
+                    font-weight: 500;
+                    &:hover {
+                        text-decoration: none;
+                        color: $gymbox_red;
+                    }
+                }
+                
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.scrolled {
+        background-color: $white;
+
+        .navbar-light {
+            .navbar-nav {
+                .nav-link {
+                    color: $gymbox_black;
+                    &.active {
+                        color: $gymbox_red;
+                        &:hover {
+                            color: $gymbox_red;
+                        }
+                    }
+                    
+                    &:hover {
+                        color: lighten($gymbox_black, 45);
+                    }
+                }
+            }
+        }
+    }
+
+
+}
 section {
     &.price-list,
     &.advertising {
@@ -6,7 +64,11 @@ section {
 
     &.section-start {
         position: relative;
-        min-height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
         background: url('../img/start-sm-bg.jpg') 0 0 no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -27,6 +89,14 @@ section {
 
     &.contact {
         background-color: lighten($gymbox_black, 10);
+    }
+
+    &.section_schedule,
+    &.advertising,
+    &.price-list,
+    &.contact {
+        padding-top: setSize(110);
+        padding-bottom: setSize(110);
     }
 }
 
@@ -97,13 +167,79 @@ section {
     }
 }
 
+#gmap-container {
+    width: 100%;
+    height: 350px;
+}
+
 
 .address-link {
+    position: relative;
     font-weight: 300;
     color: $white;
+    
+    &.phone {
+        &:before {
+            content: '';
+            position: absolute;
+            top: setSize(2);
+            left: setSize(-25);
+            width: setSize(17);
+            height: setSize(17);
+            background: url('../img/gymbox_phone_icon.svg') 0 0 no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &.email {
+        &::before {
+            content: '';
+            position: absolute;
+            top: setSize(4);
+            left: setSize(-30);
+            width: setSize(20);
+            height: setSize(15);
+            background: url('../img/gymbox_email_icon.svg') 0 0 no-repeat;
+            background-size: contain;
+        }
+    }
 
     &.contact {
         font-weight: 700;
+
+        &.phone {
+            &:before {
+                display: none;
+                @include media('>=lg') {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: setSize(10);
+                    left: setSize(-45);
+                    width: setSize(27);
+                    height: setSize(27);
+                    background: url('../img/gymbox_phone_icon.svg') 0 0 no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+
+        &.email {
+            &::before {
+                display: none;
+                @include media('>=lg') {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: setSize(9);
+                    left: setSize(-50);
+                    width: setSize(35);
+                    height: setSize(35);
+                    background: url('../img/gymbox_email_icon.svg') 0 0 no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
     }
 
     &:hover {
