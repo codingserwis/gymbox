@@ -7,6 +7,8 @@ import sass from 'gulp-sass';
 import sourceMaps from 'gulp-sourcemaps';
 import autoprefixer from 'gulp-autoprefixer';
 import imgMin from 'gulp-imagemin';
+import babel from 'gulp-babel';
+import uglify from 'gulp-uglify';
 
 // Environment
 const PRODUCTION = yargs.argv.prod;
@@ -21,7 +23,8 @@ const dirs = {
 const dependences = [
     './style.css',
     './screenshot.png',
-    './node_modules/jquery/dist/jquery.slim.min.js'
+    './node_modules/jquery/dist/jquery.slim.min.js',
+    './node_modules/bootstrap/dist/js/bootstrap.min.js'
 ]
 
 // folders to clear before build
@@ -108,17 +111,27 @@ export const imgCopy = () => {
         .pipe(dest(imgPaths.prod));
 }
 
+// gulp js
+export const js = () => {
+    return src(jsPaths.dev)
+        .pipe(babel())
+        .pipe(gulpIf(PRODUCTION, uglify()))
+        .pipe(dest(jsPaths.prod))
+        .pipe(server.stream());
+}
+
 // gulp watch task
 export const watchForChanges = () => {
     watch([phpPaths.dev, phpPaths.skipedFolder, phpPaths.skipSubFolders], series(phpCopy, serVerReload));
     watch(sassPaths.dev, sassToCss);
+    watch(jsPaths.dev, js);
 }
 
 // gulp develop task
-export const develop = series(clear, copyDependences, phpCopy, sassToCss, imgCopy, serve, watchForChanges);
+export const develop = series(clear, copyDependences, phpCopy, sassToCss, imgCopy, js, serve, watchForChanges);
 
 // gulp build for production
-export const buildForProd = series(clear, copyDependences, sassToCss, phpCopy, imgCopy);
+export const buildForProd = series(clear, copyDependences, sassToCss, phpCopy, js, imgCopy);
 
 // gulp default
 export default develop;
