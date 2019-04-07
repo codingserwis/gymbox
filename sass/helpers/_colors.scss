@@ -15,11 +15,16 @@
 
 // Font colors
 .fc {
+    &-black {
+        color: $gymbox_black;
+    }
+    
+    &-red {
+        color: $gymbox_red;
+    }
+
     &-white {
         color: $white;
     }
 
-    &-red {
-        color: $gymbox_red;
-    }
 }

@@ -100,8 +100,27 @@ section {
     }
 }
 
-.section-title {
+.section-title,
+.sheduler-title {
     font-family: 'Roboto Slab';
+}
+
+.sheduler-container {
+    position: absolute;
+    bottom: setSize(100);
+    right: setSize(35);
+    width: setSize(550);
+    background-color: rgba($white, .75);
+}
+
+.scheduler-row {
+    &.now {
+        background-color: $gymbox_green;
+    }
+
+    &.next {
+        background-color: $gymbox_red
+    }
 }
 
 .advertising-img {

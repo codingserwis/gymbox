@@ -33,7 +33,7 @@ get_header( ); ?>
 					<img src="<?php echo esc_url( URI . '/assets/img/gymbox_logo.png' ); ?>" alt="Gymbox Opole logo" title="Gymbox Opole logo" class="img-fluid">
 				</a>
 			</div>
-			<div class="col-lg-9 d-flex justify-content-end">
+			<div class="col-lg-10 d-flex justify-content-end">
 				<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymboxNavbar" aria-controls="gymboxNavbar" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -60,7 +60,38 @@ get_header( ); ?>
 	</div>
 </header>
 <section id="start" class="section-start">
-
+	<div class="container h-100">
+		<div class="row h-100">
+			<div class="col-12 position-relative">
+				<div class="sheduler-container px-3 py-4">
+					<div class="row">
+						<div class="col-12">
+							<h4 class="sheduler-title fc-black fw-500 fs-30 text-uppercase text-center">
+								Aktualnie trenujemy
+							</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="scheduler-row now fs-24 fc-white px-5 py-3 text-uppercase text-center"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 mt-4">
+							<h4 class="sheduler-title fc-black fw-500 fs-30 text-uppercase text-center">
+								Następnie
+							</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="scheduler-row next fs-24 fc-white px-5 py-3 text-uppercase text-center"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section> <!-- /start -->
 <section class="advertising">
 	<div class="container">
