@@ -144,7 +144,7 @@
             <td colspan="7"></td>
         </tr>
         <tr>
-            <td>15:00 - 17:00</td>
+            <td>15:00 - 16:00</td>
             <td class="<?php echo $g_scheduler_monday['monday_fifteenth_hour']['workout']; ?>" data-workout="<?php echo $g_scheduler_monday['monday_fifteenth_hour']['workout']; ?>">
                 <div class="text-uppercase">
                     <?php echo $g_scheduler_monday['monday_fifteenth_hour']['workout']; ?>
@@ -321,7 +321,7 @@
             </td> <!-- /sunday -->
         </tr>
         <tr>
-            <td>18:0 - 19:00</td>
+            <td>18:00 - 19:00</td>
             <td class="<?php echo $g_scheduler_monday['monday_eighteenth_hour']['workout']; ?>" data-workout="<?php echo $g_scheduler_monday['monday_eighteenth_hour']['workout']; ?>">
                 <div class="text-uppercase">
                     <?php echo $g_scheduler_monday['monday_eighteenth_hour']['workout']; ?>

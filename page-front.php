@@ -73,7 +73,7 @@ get_header( ); ?>
 					</div>
 					<div class="row">
 						<div class="col-12">
-							<div class="scheduler-row now fs-24 fc-white px-5 py-3 text-uppercase text-center"></div>
+							<div class="scheduler-row now fs-24 fc-white px-4 py-3 text-uppercase text-center"></div>
 						</div>
 					</div>
 					<div class="row">
@@ -85,7 +85,7 @@ get_header( ); ?>
 					</div>
 					<div class="row">
 						<div class="col-12">
-							<div class="scheduler-row next fs-24 fc-white px-5 py-3 text-uppercase text-center"></div>
+							<div class="scheduler-row next fs-24 fc-white px-4 py-3 text-uppercase text-center"></div>
 						</div>
 					</div>
 				</div>
