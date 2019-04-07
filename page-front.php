@@ -97,19 +97,19 @@ get_header( ); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-4 d-flex flex-column align-items-center">
-				<h3 class="section-title fs-32 text-center">
+				<h3 class="section-title fs-32 text-center slideout">
 					Zwiększ swoją<br/> <span class="fs-42 fc-red text-uppercase">siłę</span>
 				</h3>
 				<div class="advertising-img strength"></div>
 			</div>
 			<div class="col-12 col-lg-4 my-5 my-lg-0 d-flex flex-column align-items-center">
-				<h3 class="section-title fs-32 text-center">
+				<h3 class="section-title fs-32 text-center slideout">
 					Popraw sowją <span class="fs-42 fc-red text-uppercase">sprawność</span>
 				</h3>
 				<div class="advertising-img efficency"></div>
 			</div>
 			<div class="col-12 col-lg-4 d-flex flex-column align-items-center">
-				<h3 class="section-title fs-32 text-center">
+				<h3 class="section-title fs-32 text-center slideout">
 					Pracuj nad <span class="fs-42 fc-red text-uppercase">kondycją</span>
 				</h3>
 				<div class="advertising-img condition"></div>
@@ -121,15 +121,15 @@ get_header( ); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="section-title fs-36 text-center text-uppercase">
+				<h2 class="section-title fs-36 text-center text-uppercase slidein">
 					grafik
 				</h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 text-center">
-				<h3 class="section-title fs-22">Klub jest czynny 7 dni w tygodniu od: <?php the_field( 'gymbox_open_hour' ); ?> do: <?php the_field( 'gymbox_close_hour' ); ?>.</h3>
-				<h3 class="section-title fs-22">Zapraszamy wszystkich chętnych na zajęcia!</h3>
+				<h3 class="section-title fs-22 slideout">Klub jest czynny 7 dni w tygodniu od: <?php the_field( 'gymbox_open_hour' ); ?> do: <?php the_field( 'gymbox_close_hour' ); ?>.</h3>
+				<h3 class="section-title fs-22 slideout">Zapraszamy wszystkich chętnych na zajęcia!</h3>
 			</div>
 		</div>
 		<div class="row">
@@ -143,7 +143,7 @@ get_header( ); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="section-title fs-36 text-center text-uppercase">
+				<h2 class="section-title fs-36 text-center text-uppercase slidein">
 					cennik
 				</h2>
 			</div>
@@ -155,7 +155,7 @@ get_header( ); ?>
 		</div>
 		<div class="row">
 			<div class="col-12 mt-4">
-				<h3 class="section-title fs-22 text-center">
+				<h3 class="section-title fs-22 text-center slidein">
 					Akceptujemy karty sportowe
 				</h3>
 			</div>
@@ -173,7 +173,7 @@ get_header( ); ?>
 		</div>
 		<div class="row">
 			<div class="col-12 mt-4">
-				<h3 class="section-title fs-22 text-center">
+				<h3 class="section-title fs-22 text-center slidein">
 					Akceptujemy karty płatnicze
 				</h3>
 			</div>
@@ -185,7 +185,7 @@ get_header( ); ?>
 		</div>
 		<div class="row">
 			<div class="col-12 mt-4">
-				<h3 class="section-title fs-22 text-center">
+				<h3 class="section-title fs-22 text-center slidein">
 					Wspierają nas
 				</h3>
 			</div>

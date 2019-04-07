@@ -2,7 +2,10 @@
 
     const domController = (() => {
         const domElements = {
-            header: '.header'
+            header: '.header',
+            contactSection: '.contact-section',
+            toSlideIn: '.slidein',
+            toSlideOut: '.slideout'
         }
 
         return {
@@ -14,7 +17,11 @@
 
     const appController = ((_domCtrl) => {
         const domElement = _domCtrl.getDomElements(),
-                $header = $(domElement.header);
+                $header = $(domElement.header),
+                $contact = $(domElement.contactSection),
+                $slideIn = $(domElement.toSlideIn),
+                $slideOut = $(domElement.toSlideOut);
+
         return {
             init: () => {
                 $(window).scroll(() => {
@@ -22,14 +29,27 @@
                     
                     if (winTop > 10) {
                         $header.addClass('scrolled');
-                        $('.contact-section').hide('slow');
+                        $contact.fadeOut(10);
                     } else {
                         $header.removeClass('scrolled');
-                        $('.contact-section').show('slow');
+                        $contact.fadeIn();
                     }
-                    
                 });
-                console.log('app'); //TODO
+
+                
+
+                $(".nav-link, a[href='#start'], .footer-nav a").on('click', (event) => {
+                    if (event.currentTarget !== '') {
+                        event.preventDefault();
+                        let hash = event.currentTarget.hash;
+    
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, () => {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
             }
         }
     })(domController);

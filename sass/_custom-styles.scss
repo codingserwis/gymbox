@@ -82,8 +82,10 @@ section {
     &.section_schedule {
         background: url('../img/graphic-sm-bg.jpg') 0 0 no-repeat;
         background-attachment: fixed;
+        background-size: cover;
         @include media('>=lg') {
             background: url('../img/graphic-big-bg.jpg') 0 0 no-repeat;
+            background-size: cover;
         }
     }
 

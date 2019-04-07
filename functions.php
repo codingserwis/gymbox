@@ -15,7 +15,7 @@
     wp_enqueue_style( 'g-fonts', 'https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400,500,700&amp;subset=latin-ext', array(), null, 'all' );
 
     // jQuery
-    wp_enqueue_script( 'j-query', URI . '/assets/js/jquery.slim.min.js', array(), null , true );
+    wp_enqueue_script( 'j-query', URI . '/assets/js/jquery.min.js', array(), null , true );
     // Bootstrap js
     wp_enqueue_script( 'bootstrap', URI . '/assets/js/bootstrap.min.js', array( 'j-query' ), null , true );
     
