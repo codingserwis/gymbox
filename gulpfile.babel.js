@@ -24,7 +24,8 @@ const dependences = [
     './style.css',
     './screenshot.png',
     './node_modules/jquery/dist/jquery.min.js',
-    './node_modules/bootstrap/dist/js/bootstrap.min.js'
+    './node_modules/bootstrap/dist/js/bootstrap.min.js',
+    './node_modules/popper.js/dist/umd/popper.min.js'
 ]
 
 // folders to clear before build
