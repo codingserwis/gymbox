@@ -16,7 +16,6 @@
 
         return {
             init: () => {
-                console.log('map'); //TODO
                 googleMap();
             }
         }

@@ -3,9 +3,7 @@
     const domController = (() => {
         const domElements = {
             header: '.header',
-            contactSection: '.contact-section',
-            toSlideIn: '.slidein',
-            toSlideOut: '.slideout'
+            contactSection: '.contact-section'
         }
 
         return {
@@ -18,9 +16,7 @@
     const appController = ((_domCtrl) => {
         const domElement = _domCtrl.getDomElements(),
                 $header = $(domElement.header),
-                $contact = $(domElement.contactSection),
-                $slideIn = $(domElement.toSlideIn),
-                $slideOut = $(domElement.toSlideOut);
+                $contact = $(domElement.contactSection);
 
         return {
             init: () => {
@@ -38,7 +34,7 @@
 
                 
 
-                $(".nav-link, a[href='#start'], .footer-nav a").on('click', (event) => {
+                $(".menu-item a, a[href='#start'], .footer-nav a").on('click', (event) => {
                     if (event.currentTarget !== '') {
                         event.preventDefault();
                         let hash = event.currentTarget.hash;

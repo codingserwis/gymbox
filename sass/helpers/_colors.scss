@@ -28,3 +28,10 @@
     }
 
 }
+
+.link-black-red {
+    color: $gymbox_black;
+        &:hover {
+            color: $gymbox_red;
+        }
+}
