@@ -245,9 +245,6 @@
 
         return {
             init: () => {
-                console.log('s');
-                let treningi = {...g_scheduler, openInNine: 'Otwieramy o 9'};
-                console.log(treningi);
                 wodScheduler();
             }
         }
