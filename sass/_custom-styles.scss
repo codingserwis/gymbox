@@ -1,0 +1,337 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .navbar {
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            .menu-item {
+                margin: 0 setSize(6);
+                a {
+                    color: $white;
+                    font-size: setSize(20);
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    padding: setSize(4) setSize(10);
+                    &:hover {
+                        color: $gymbox_red;
+                    }
+                }
+            }
+        }
+    }
+
+    &.scrolled {
+        background-color: transparent;
+        @include media('>=lg') {
+            background-color: $white;
+        }
+
+        .navbar {
+            .navbar-nav {
+                .menu-item {
+                    a {
+                        color: $gymbox_black;
+                        &:hover {
+                            color: $gymbox_red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-toggler {
+        background-color: $white;
+    }
+}
+
+.social-icons {
+    // display: block;
+    width: setSize(22);
+    height: auto;
+}
+
+section {
+    &.price-list,
+    &.advertising {
+        background-color: $light-section-background;
+    }
+
+    &.section-start {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: url('../img/start-sm-bg.jpg') 0 0 no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        @include media('>=lg') {
+            background: url('../img/start-big-bg.jpg') 0 0 no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &.section_schedule {
+        background: url('../img/graphic-sm-bg.jpg') 0 0 no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        @include media('>=lg') {
+            background: url('../img/graphic-big-bg.jpg') 0 0 no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &.contact {
+        background-color: lighten($gymbox_black, 10);
+    }
+
+    &.section_schedule,
+    &.advertising,
+    &.price-list,
+    &.contact {
+        padding-top: setSize(110);
+        padding-bottom: setSize(110);
+    }
+}
+
+.section-title,
+.sheduler-title {
+    font-family: 'Roboto Slab';
+}
+
+.sheduler-container {
+    position: absolute;
+    bottom: setSize(10);
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba($white, .75);
+    @include media('>=lg') {
+        width: setSize(600);
+        bottom: setSize(100);
+        right: setSize(35);
+        left: unset;
+    }
+}
+
+.scheduler-row {
+    &.now {
+        background-color: $gymbox_green;
+    }
+
+    &.next {
+        background-color: $gymbox_red
+    }
+}
+
+// for scheduler
+.card {
+    background-color: rgba($white, .25);
+
+    .card-header {
+        border-bottom: 1px solid rgba($white, .25);
+    }
+}
+
+.accordion {
+    .card:first-of-type,
+    .card:not(:first-of-type):not(:last-of-type) {
+        border-bottom: 1px solid $white;
+    }
+}
+
+.scheduler-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+        font-size: setSize(20);
+    }
+}
+
+.btn {
+    &.btn-link {
+        font-size: setSize(22);
+        color: $white;
+    }
+}
+
+.advertising-img {
+    width: setSize(200);
+    height: setSize(200);
+    margin-top: setSize(15);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    
+    &.strength {
+        background: url('../img/strength.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    &.efficency {
+        background: url('../img/efficiency.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    &.condition {
+        background: url('../img/conditioning.jpg') 0 0 no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+#scheduler {
+    &.table {
+        th,
+        td {
+            color: $white;
+            font-weight: 300;
+            text-align: center;
+            vertical-align: middle;
+            font-size: setSize(14);
+            padding: setSize(16) setSize(14);
+        }
+    }
+}
+
+
+#price-list {
+    th,
+    td {
+        font-size: setSize(18);
+        font-weight: 300;
+        padding: setSize(18) setSize(7);
+        text-align: center;
+    }
+
+    &.table-hover {
+        tbody {
+            tr {
+                &:hover {
+                    color: $white;
+                    background-color: $gymbox_black;
+                } 
+            } 
+        }
+    }
+}
+
+#gmap-container {
+    width: 100%;
+    height: 350px;
+}
+
+
+.address-link {
+    position: relative;
+    font-weight: 300;
+    color: $white;
+    
+    &.phone {
+        &:before {
+            content: '';
+            position: absolute;
+            top: setSize(2);
+            left: setSize(-25);
+            width: setSize(17);
+            height: setSize(17);
+            background: url('../img/gymbox_phone_icon.svg') 0 0 no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &.email {
+        &::before {
+            content: '';
+            position: absolute;
+            top: setSize(4);
+            left: setSize(-30);
+            width: setSize(20);
+            height: setSize(15);
+            background: url('../img/gymbox_email_icon.svg') 0 0 no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &.contact {
+        font-weight: 700;
+
+        &.phone {
+            &:before {
+                display: none;
+                @include media('>=lg') {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: setSize(10);
+                    left: setSize(-45);
+                    width: setSize(27);
+                    height: setSize(27);
+                    background: url('../img/gymbox_phone_icon.svg') 0 0 no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+
+        &.email {
+            &::before {
+                display: none;
+                @include media('>=lg') {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: setSize(9);
+                    left: setSize(-50);
+                    width: setSize(35);
+                    height: setSize(35);
+                    background: url('../img/gymbox_email_icon.svg') 0 0 no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        color: $white;
+    }
+}
+
+// Footer
+.footer-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media('>=lg') {
+        flex-direction: row;
+        justify-content: center;
+    }
+        li {
+            margin: setSize(9) 0;
+            text-align: center;
+            a {
+                padding: setSize(10) setSize(10);
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+        }
+}

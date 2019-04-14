@@ -1,0 +1,53 @@
+// Font size
+.fs {
+    &-12 {
+        font-size: setSize(12);
+    }
+
+    
+    &-22 {
+        font-size: setSize(22);
+    }
+
+    &-24 {
+        font-size: setSize(24);
+    }
+
+    &-26 {
+        font-size: setSize(26);
+    }
+
+    &-30 {
+        font-size: setSize(30);
+    }
+    
+    &-24-32 {
+        font-size: setSize(24);
+        @include media('>=lg') {
+            font-size: setSize(32);
+        }
+    }
+
+    &-32 {
+        font-size: setSize(32);
+    }
+
+    &-36 {
+        font-size: setSize(36);
+    }
+
+    &-42 {
+        font-size: setSize(42);
+    }
+}
+
+// Font weight
+.fw {
+    &-300 {
+        font-weight: 300;
+    }
+
+    &-700 {
+        font-weight: 700;
+    }
+}
