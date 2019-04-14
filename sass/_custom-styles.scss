@@ -6,56 +6,61 @@
     width: 100%;
     z-index: 1000;
 
-    .navbar-light {
+    .navbar {
         .navbar-nav {
-            .nav-link {
-                color: $white;
-                font-size: setSize(20);
-                font-weight: 400;
-                text-transform: uppercase;
-                &.scroller {
-                    color: $gymbox_black;
-                }
-                &.active {
-                    color: $gymbox_red;
-                    font-weight: 500;
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            .menu-item {
+                margin: 0 setSize(6);
+                a {
+                    color: $white;
+                    font-size: setSize(20);
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    padding: setSize(4) setSize(10);
                     &:hover {
-                        text-decoration: none;
                         color: $gymbox_red;
                     }
-                }
-                
-                &:hover {
-                    color: $white;
                 }
             }
         }
     }
 
     &.scrolled {
-        background-color: $white;
+        background-color: transparent;
+        @include media('>=lg') {
+            background-color: $white;
+        }
 
-        .navbar-light {
+        .navbar {
             .navbar-nav {
-                .nav-link {
-                    color: $gymbox_black;
-                    &.active {
-                        color: $gymbox_red;
+                .menu-item {
+                    a {
+                        color: $gymbox_black;
                         &:hover {
                             color: $gymbox_red;
                         }
-                    }
-                    
-                    &:hover {
-                        color: lighten($gymbox_black, 45);
                     }
                 }
             }
         }
     }
 
-
+    .navbar-toggler {
+        background-color: $white;
+    }
 }
+
+.social-icons {
+    // display: block;
+    width: setSize(22);
+    height: auto;
+}
+
 section {
     &.price-list,
     &.advertising {
@@ -109,10 +114,17 @@ section {
 
 .sheduler-container {
     position: absolute;
-    bottom: setSize(100);
-    right: setSize(35);
-    width: setSize(600);
+    bottom: setSize(10);
+    width: 100%;
+    left: 0;
+    right: 0;
     background-color: rgba($white, .75);
+    @include media('>=lg') {
+        width: setSize(600);
+        bottom: setSize(100);
+        right: setSize(35);
+        left: unset;
+    }
 }
 
 .scheduler-row {
@@ -122,6 +134,38 @@ section {
 
     &.next {
         background-color: $gymbox_red
+    }
+}
+
+// for scheduler
+.card {
+    background-color: rgba($white, .25);
+
+    .card-header {
+        border-bottom: 1px solid rgba($white, .25);
+    }
+}
+
+.accordion {
+    .card:first-of-type,
+    .card:not(:first-of-type):not(:last-of-type) {
+        border-bottom: 1px solid $white;
+    }
+}
+
+.scheduler-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+        font-size: setSize(20);
+    }
+}
+
+.btn {
+    &.btn-link {
+        font-size: setSize(22);
+        color: $white;
     }
 }
 

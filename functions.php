@@ -9,6 +9,12 @@
  // Disable Gutenberg editor
  add_filter( 'use_block_editor_for_post', '__return_false' );
 
+ // Menus
+ register_nav_menus( array(
+    'main_menu' => 'Menu główne',
+    'footer_menu' => 'Footer menu'
+ ) );
+
  function gymbox_scripts_and_styles() {
     
     // Google fonts 
@@ -17,7 +23,10 @@
     // jQuery
     wp_enqueue_script( 'j-query', URI . '/assets/js/jquery.min.js', array(), null , true );
     // Bootstrap js
-    wp_enqueue_script( 'bootstrap', URI . '/assets/js/bootstrap.min.js', array( 'j-query' ), null , true );
+    wp_enqueue_script( 'bootstrap', URI . '/assets/js/bootstrap.min.js', array( 'j-query', 'popper' ), null , true );
+    // Popper js
+    wp_enqueue_script( 'popper', URI . '/assets/js/popper.min.js', array( 'j-query' ), null , true );
+    
     
 
     // Google mpa
