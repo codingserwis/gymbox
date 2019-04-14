@@ -3,6 +3,8 @@
  * Functions for Gymbox theme
  */
 
+ include 'g-map-key.php';
+
  define( 'URI', get_template_directory_uri( ) );
  define( 'URL', get_template_directory( ) ); 
 
@@ -30,7 +32,7 @@
     
 
     // Google mpa
-    wp_enqueue_script( 'g-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCyeImWmy1LmNodXs2VPwMnW0-T_W_rHLw&callback' , array(), null, true );
+    wp_enqueue_script( 'g-map', 'https://maps.googleapis.com/maps/api/js?key=' . $api_key , array(), null, true );
     // Main styles
     $styles_version = filemtime( URL . '/assets/css/main.css' );
     wp_enqueue_style( 'main-styles', URI . '/assets/css/main.css', array(), $styles_version, 'all' );
